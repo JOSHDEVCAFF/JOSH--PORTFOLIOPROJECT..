@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Josh Mendoza — Front-End Developer</title>
+  <link rel="icon" href="letter-j.png" type="image/png" />
+  <link href="https://fonts googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0066ff">
+</head>
+<body>
+  <!-- wrap the page so we can slide it when chat "navigates" -->
+  <div id="page-wrap">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#hero">YOSHUA</a>
+
+        <nav id="navbar" class="nav" role="navigation" aria-label="Primary">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-controls">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <!-- will be toggled via JS -->
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+
+          <button id="menu-btn" class="icon-btn menu-btn" aria-controls="navbar" aria-expanded="false" aria-label="Open menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <!-- add reveal -->
+        <div class="container hero-card reveal">
+          <div class="hero-left">
+            <p class="hero-sub">Hello, I'm Mendoza, Josh A.</p>
+            <h1 class="hero-title">FRONT-END DEVELOPER</h1>
+            <p class="hero-sub">Front‑End Developer who blends design, code, and AI to create smart, responsive web experiences.</p>
+            <div class="hero-ctas">
+              <a class="btn primary" href="#projects">See Projects</a>
+              <a class="btn ghost" id="contact-scroll" href="#contact">Let's Connect</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-visual" aria-hidden="true">
+              <!-- placeholder illustration; replace with your image -->
+<img src="big laid.jpg" width="400" height="500" style="border-radius: 10%; object-fit: cover; box-shadow: rgba(116, 114, 248, 0.146) 10px 5px 0px; background-color: black;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div class="about-photo">
+            <img src="hoodlaid.png" width="50" height="50" alt="profile">
+          </div>
+          <!-- add reveal to about text -->
+          <div class="about-text reveal">
+            <h2>About Me</h2>
+            <p>I’m a Front‑End Developer who enjoys creating responsive websites, solving coding errors, and improving user experience. I love building clean, functional, and creative designs.</p>
+            <p>Available for freelance and collaboration — I love solving UI challenges and shipping simple, maintainable solutions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card reveal" tabindex="0">
+              <div class="project-thumb">
+                <img src="NOTES.png" alt="NEURONOTES preview">
+              </div>
+              <div class="project-content">
+                <h3>NEURONOTES</h3>
+                <p class="muted">A website I made to show different AI platforms like ChatGPT, DeepSeek, and Gemini. It explains what each AI does in an easy-to-read and organized design.</p>
+                <div class="project-meta">
+                  <div class="badges">
+                    <span class="badge"><img src="html.png" alt="HTML" width="25" height="25"></span>
+                    <span class="badge"><img src="text.png" alt="CSS" width="25" height="25"></span>
+                    <span class="badge"><img src="js.png" alt="JS" width="25" height="25" style="border-radius:4px;"></span>
+                  </div>
+                  <div class="actions">
+                    <a class="btn small" href="https://joshdevcaff.github.io/NueroNotes/" target="_blank" rel="noopener">Live Demo</a>
+                    <a class="btn small ghost" href="https://github.com/JOSHDEVCAFF/NueroNotes" target="_blank" rel="noopener">Code on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal" tabindex="0">
+              <div class="project-thumb">
+                <img src="AI.png" alt="YOSHUAI preview">
+              </div>
+              <div class="project-content">
+                <h3>YOSHUAI</h3>
+                <p class="muted">A simple and modern AI chatbot I designed with a clean layout and custom logo. It lets users chat easily in a smooth and futuristic interface.</p>
+                <div class="project-meta">
+                  <div class="badges">
+                    <span class="badge"><img src="html.png" alt="HTML" width="25" height="25"></span>
+                    <span class="badge"><img src="text.png" alt="CSS" width="25" height="25"></span>
+                    <span class="badge"><img src="js.png" alt="JS" width="25" height="25" style="border-radius:4px;"></span>
+                  </div>
+                  <div class="actions">
+                    <a class="btn small" href=" https://joshdevcaff.github.io/YoshuaBot/" target="_blank" rel="noopener">Live Demo</a>
+                    <a class="btn small ghost" href="https://github.com/JOSHDEVCAFF/yoshuAInew" target="_blank" rel="noopener">Code on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal" tabindex="0">
+              <div class="project-thumb">
+                <img src="bryce.png" alt="I LOVE JESUS preview">
+              </div>
+              <div class="project-content">
+                <h3>I LOVE JESUS.</h3>
+                <p class="muted">An online Christian clothing store that spreads the gospel through fashion. The site features a clean layout with easy navigation for shopping shirts, hoodies, and accessories.</p>
+                <div class="project-meta">
+                  <div class="badges">
+                    <span class="badge"><img src="html.png" alt="HTML" width="25" height="25"></span>
+                    <span class="badge"><img src="text.png" alt="CSS" width="25" height="25"></span>
+                    <span class="badge"><img src="js.png" alt="JS" width="25" height="25" style="border-radius:4px;"></span>
+                  </div>
+                  <div class="actions">
+                    <a class="btn small" href="https://jesusinthestreet.com/" target="_blank" rel="noopener">Live Demo</a>
+                    <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Approach: how we plan with clients -->
+      <section id="approach" class="section approach">
+        <div class="container">
+          <h2 class="section-title">My approach</h2>
+
+          <div class="approach-grid">
+            <article class="approach-card reveal approach-primary" tabindex="0" aria-labelledby="approach-1-title">
+              <div class="approach-inner">
+                <h3 id="approach-1-title">Planning & Strategy</h3>
+                <p class="muted">We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.</p>
+                <div class="approach-cta"><span class="phase-pill">Phase 1</span></div>
+              </div>
+            </article>
+
+            <article class="approach-card reveal approach-secondary" tabindex="0" aria-labelledby="approach-2-title">
+              <div class="approach-inner">
+                <h3 id="approach-2-title">Design & Prototyping</h3>
+                <p class="muted" style="color: white;">Create wireframes and visual designs, iterate with feedback, and build interactive prototypes to validate UX before development.</p>
+                <div class="approach-cta"><span class="phase-pill">Phase 2</span></div>
+              </div>
+            </article>
+
+            <article class="approach-card reveal approach-melee" tabindex="0" aria-labelledby="approach-3-title">
+              <div class="approach-inner">
+                <h3 id="approach-3-title">Build & Launch</h3>
+                <p class="muted" style="color: white;">Develop responsive, accessible code, test across devices, optimise performance, and deploy — followed by monitoring and maintenance.</p>
+                <div class="approach-cta"><span class="phase-pill">Phase 3</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education: new minimal section you can expand later -->
+      <section id="education" class="section education">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="education-list">
+            <div class="education-item reveal">
+              <h3>Mandaue City College</h3>
+              <p class="muted">B.S. in Information Technology — 1st Year</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="muted">Primary tools and technologies I use</p>
+
+          <!-- concise skills list (centered) -->
+          <div class="skills-list reveal">
+            <ul class="skills-inline">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive design</li>
+              <li>Problem solving</li>
+              <li>Debugging</li>
+              <li>UI design</li>
+            </ul>
+          </div>
+
+          <!-- keep progress bars (animated) -->
+          <div class="skills-grid">
+            <div class="skill reveal">
+              <div class="skill-head">
+                <div class="skill-name">HTML</div>
+                <div class="skill-percent">95%</div>
+              </div>
+              <div class="skill-bar"><div class="skill-fill skill-html" data-percent="95"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <div class="skill-name">CSS</div>
+                <div class="skill-percent">90%</div>
+              </div>
+              <div class="skill-bar"><div class="skill-fill skill-css" data-percent="90"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-percent">88%</div>
+              </div>
+              <div class="skill-bar"><div class="skill-fill skill-js" data-percent="88"></div></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <!-- LEFT: contact details with large circular icons -->
+            <div class="contact-left reveal">
+            <h2 class="section-title">Let's Talk</h2>
+            <p class="muted">Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to discussing new ideas and opportunities.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+              <span class="contact-icon phone">📞</span>
+              <div class="contact-info">
+                <strong>Phone</strong>
+                <div class="muted">09480547939</div>
+              </div>
+              </div>
+
+              <div class="contact-item">
+              <span class="contact-icon email">✉️</span>
+              <div class="contact-info">
+                <strong>Email</strong>
+                <div class="muted">joshscz123@gmail.com</div>
+              </div>
+              </div>
+
+              <div class="contact-item">
+              <span class="contact-icon location">📍</span>
+              <div class="contact-info">
+                <strong>Address</strong>
+                <div class="muted">Mandaue City, Philippines</div>
+              </div>
+              </div>
+            </div>
+            <div class="social-boxes" role="list" aria-label="Social links" style="display:flex;gap:12px;margin-top:1rem;">
+              <a class="social-card" role="listitem" href="https://github.com/JOSHDEVCAFF" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile" style="display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:30px;background:#ffffff00;border:1px solid rgba(66, 82, 205, 0.06);box-shadow:0 4px 10px rgba(0, 0, 0, 0.324);">
+              <img class="social-logo" src="github.png" width="28" height="28" alt="GitHub logo">
+              </a>
+
+              <a class="social-card" role="listitem" href="https://www.instagram.com/joshcaffeinated" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile" style="display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:30px;background:#ffffff00;border:1px solid rgba(0,0,0,0.06);box-shadow:0 4px 10px rgba(0, 0, 0, 0.352);">
+              <img class="social-logo" src="instagram.png" width="28" height="28" alt="Instagram logo">
+              </a>
+
+              <a class="social-card" role="listitem" href="https://www.facebook.com/JoshCaffdial" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook profile" style="display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:30px;background:#ffffff00;border:1px solid rgba(0,0,0,0.06);box-shadow:0 4px 10px rgba(0, 0, 0, 0.342);">
+              <img class="social-logo" src="communication.png" width="28" height="28" alt="Facebook logo">
+              </a>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA: large hero + two-card grid -->
+      <section id="contact-cta" class="section contact-cta">
+        <div class="container">
+          <div class="cta-hero reveal">
+            <h2 class="cta-title">Ready to take your digital presence to the next level?</h2>
+            <p class="cta-sub muted">Reach out to me today and let's discuss how I can help you achieve your goals.</p>
+            <div class="cta-actions">
+              <button class="btn cta-btn" id="cta-scroll-btn" type="button">Let's get in touch!</button>
+            </div>
+          </div>
+
+          <div class="cta-grid reveal" aria-hidden="false">
+            <div class="cta-card cta-card--left">
+              <h3>Let’s bring your vision to life with code that works beautifully</h3>
+              <p class="muted">Fast, maintainable, and accessible front-end development. I craft UIs that look great and perform even better.</p>
+              <div style="margin-top:1rem;">
+                <button class="btn ghost" id="copy-email-btn" type="button" aria-label="Copy email" style="border: 1px solid rgba(0, 0, 0, 0.306); background-color: rgba(75, 143, 233, 0.263);"><img src="copy.png" width="20px" height="20px">Copy my email address</button>
+              </div>
+            </div>
+
+            <div class="cta-card cta-card--right">
+              <small class="muted">The Inside Scoop</small>
+              <h4>Currently developing a high-performance JavaScript animation library</h4>
+              <div class="cta-code-visual" aria-hidden="true">
+                <!-- decorative code block (pure CSS) -->
+                <pre>// import moduleName from 'modulePath';</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> YOSHUA — Built with HTML • CSS • JS</p>
+      </div>
+    </footer>
+  </div> <!-- end #page-wrap -->
+
+  <!-- Chat widget removed -->
+  <!-- previously contained #chat-widget / .chat-panel markup; removed per request -->
+
+  <script src="script.js"></script>
+</body>
+</html>
